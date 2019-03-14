@@ -21,8 +21,8 @@ allprojects {
         google()
     }
 
-    group = "com.bogdwellers"
-    version = '0.2'
+    group = "com.kortext.android"
+    version = '0.1'
 
     apply plugin: "com.jfrog.bintray"
     apply plugin: "android-maven"
