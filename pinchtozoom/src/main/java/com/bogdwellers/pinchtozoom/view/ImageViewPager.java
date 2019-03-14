@@ -73,7 +73,7 @@ public class ImageViewPager extends ViewPager {
                 float tx = VALUES[Matrix.MTRANS_X] + dx;
                 float sdw = dw * VALUES[Matrix.MSCALE_X];
 
-                //Log.d(TAG, "sdw: " + sdw + " vw: " + vw);
+                //Timber.d( "sdw: " + sdw + " vw: " + vw);
 
                 return VALUES[Matrix.MSCALE_X] / centerInsideScale(vw, vh, dw, dh) > scaleThreshold && !translationExceedsBoundary(tx, vw, sdw) && sdw > vw && pointerCount == 1; // Assumes x-y scales are equal
             }
